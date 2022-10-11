@@ -1,0 +1,22 @@
+input.onButtonPressed(Button.A, function () {
+    for (let index = 0; index < 4; index++) {
+        pins.digitalWritePin(DigitalPin.P13, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P13, 0)
+        pins.digitalWritePin(DigitalPin.P9, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P9, 0)
+        pins.digitalWritePin(DigitalPin.P8, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P8, 0)
+        pins.digitalWritePin(DigitalPin.P16, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(DigitalPin.P15, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P15, 0)
+        pins.digitalWritePin(DigitalPin.P14, 1)
+        control.waitMicros(1000000)
+        pins.digitalWritePin(DigitalPin.P14, 0)
+    }
+})
