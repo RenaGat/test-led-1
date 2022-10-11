@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    for (let index = 0; index < 4; index++) {
+    while (true) {
         pins.digitalWritePin(DigitalPin.P13, 1)
         control.waitMicros(1000000)
         pins.digitalWritePin(DigitalPin.P13, 0)
