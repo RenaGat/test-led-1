@@ -8,6 +8,23 @@ input.onButtonPressed(Button.A, function () {
         control.waitMicros(500000)
     }
     while (true) {
-    	
+        pins.digitalWritePin(DigitalPin.P14, 1)
+        pins.digitalWritePin(DigitalPin.P13, 1)
+        control.waitMicros(5000000)
+        pins.digitalWritePin(DigitalPin.P13, 0)
+        pins.digitalWritePin(DigitalPin.P14, 1)
+        pins.digitalWritePin(DigitalPin.P9, 1)
+        control.waitMicros(2000000)
+        pins.digitalWritePin(DigitalPin.P9, 0)
+        pins.digitalWritePin(DigitalPin.P14, 0)
+        pins.digitalWritePin(DigitalPin.P8, 1)
+        pins.digitalWritePin(DigitalPin.P16, 1)
+        control.waitMicros(5000000)
+        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(DigitalPin.P8, 1)
+        pins.digitalWritePin(DigitalPin.P15, 1)
+        control.waitMicros(2000000)
+        pins.digitalWritePin(DigitalPin.P15, 0)
+        pins.digitalWritePin(DigitalPin.P8, 0)
     }
 })
